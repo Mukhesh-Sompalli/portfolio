@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #000, #222);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Default active link styling */
+.nav-links li a.active {
+    background: linear-gradient(to right, #ff0080, #ff6600);
+    color: white;
+}
+
+/* Remove background color for inactive links */
+.nav-links li a.not-active {
+    background: none;
+    color: #fff;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    background: linear-gradient(to right, #ff0080, #ff6600);
+    color: white;
+}
+
+/* Ensure sections do not shift when clicking */
+section {
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Menu Toggle Button (For Mobile View) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design - Show Toggle Button & Hide Menu */
+@media (max-width: 720px) {
+    .nav-links {
+        display: none; /* Hide menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to right, #000, #222);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+
+    /* Show nav links when navbar is open */
+    .navbar.open .nav-links {
+        display: flex;
+    }
+}
