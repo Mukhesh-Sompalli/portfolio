@@ -60,7 +60,7 @@
   display: inline-block;
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4); /* Pink shadow */
-  margin-top: auto; /* Ensures button alignment */
+  margin-top: auto; 
 }
 
 .service-card button:hover, .service-card a:hover {
