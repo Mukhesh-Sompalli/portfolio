@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css'; 
-import Page1 from '../page1';
+import Page1 from '../home/page1';
 import AboutMe from '../aboutus/aboutUs';
 import MainApp from '../services/mainPath';
 import Portfolio from '../portpoli/portpoli';

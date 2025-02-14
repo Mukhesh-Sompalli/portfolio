@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import './page1.css'; // Ensure the CSS file path is correct
-import linkedinLogo from '../portpolio/Footer/linkedin.jpg';
-import instagramLogo from '../portpolio/Footer/instagram.jpg';
-import githubLogo from '../portpolio/Footer/github.png';
-import Profile from './Kumar.jpg'; // Ensure the correct path
+import './page1.css'; 
+import linkedinLogo from '../Footer/linkedin.jpg';
+import instagramLogo from '../Footer/instagram.jpg';
+import githubLogo from '../Footer/github.png';
+import Profile from './Kumar.jpg'; 
 
 const Page1 = () => {
   const [menuActive, setMenuActive] = useState(false);
