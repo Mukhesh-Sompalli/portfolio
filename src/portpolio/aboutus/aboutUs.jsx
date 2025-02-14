@@ -1,13 +1,13 @@
 import React from 'react';
 import './aboutUs.css'; 
-import Image from "./mukesh.jpg"; // Import the image correctly
+import Image from "./mukesh.jpg"; 
 
 const AboutMe = () => {
   return (
     <div className="about-me">
       <h1>ABOUT ME</h1>
       <div className="profile-container">
-        <img src={Image} alt="Profile" className="profile-image" /> {/* Corrected */}
+        <img src={Image} alt="Profile" className="profile-image" /> 
         <div className="profile-details">
           <p>
             I am a passionate and motivated Frontend Developer seeking an opportunity to start my professional career. My foundation in web development technologies like HTML, CSS, JavaScript, and React.js equips me to create intuitive and responsive user interfaces that enhance user experiences.

@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +10,12 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Smooth scrolling */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Navbar Styles */
+
 .navbar {
     background: linear-gradient(to right, #000, #222);
     padding: 15px 30px;
@@ -31,7 +31,7 @@ html {
     z-index: 1000;
 }
 
-/* Logo */
+
 .navbar .logo {
     font-size: 24px;
     color: #fff;
@@ -57,27 +57,30 @@ html {
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: background 0.4s ease, color 0.4s ease;
+    transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); 
 }
 
-/* Active Link Styling */
+
 .nav-links li a.active {
     background: linear-gradient(to right, #ff0080, #ff6600);
     color: white;
+    box-shadow: 3px 3px 7px rgba(255, 102, 0, 0.5); 
 }
 
-/* Hover effect */
+
 .nav-links li a:hover {
     background: linear-gradient(to right, #ff0080, #ff6600);
     color: white;
+    box-shadow: 3px 3px 7px rgba(255, 102, 0, 0.5); 
 }
 
-/* Ensure sections do not shift when clicking */
+
 section {
-    padding-top: 80px; /* Offset for fixed navbar */
+    padding-top: 80px;
 }
 
-/* Menu Toggle Button (For Mobile View) */
+
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -87,10 +90,10 @@ section {
     cursor: pointer;
 }
 
-/* Responsive Design - Show Toggle Button & Hide Menu */
+
 @media (max-width: 720px) {
     .nav-links {
-        display: none; /* Hide menu */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -105,7 +108,7 @@ section {
         padding: 10px 0;
     }
 
-    /* Toggle Button Visible */
+   
     .menu-toggle {
         display: block;
     }

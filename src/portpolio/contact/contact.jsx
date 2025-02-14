@@ -9,7 +9,7 @@ const ContactForm = () => {
         <div className="main-div">
           <div className='contact-select'>
             <h2>Let's talk</h2>
-            <p>I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact me anytime.</p>
+            <p>As a passionate and dedicated fresher, I am eager to take on new challenges and contribute my skills to exciting projects. I am always open to learning and collaborating, so feel free to reach out with any opportunities. I am available and ready to work—let’s build something great together!</p>
             <div className="contact-details">
             <p><img src="https://t3.ftcdn.net/jpg/02/38/96/64/360_F_238966486_A5wEWiRNtuUm85Qxj5BM12hCDNrSS7yS.jpg" alt="Email" />mukheshsompalli02@gmail.com</p>
               <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIIAZhSeG5dj-8TgXmNn0HNUwq-I9hCzKXk1qUte_BVUSvYJNnn0T9tw&s" alt="Phone" /> +91 7093858979</p>

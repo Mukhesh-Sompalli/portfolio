@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './navbar.css'; 
 import Page1 from '../home/page1';
 import AboutMe from '../aboutus/aboutUs';
-import MainApp from '../services/mainPath';
+// import MainApp from '../services/mainPath';
 import Portfolio from '../portpoli/portpoli';
+import Services from '../services/services';
 import ContactForm from '../contact/contact';
 import Footer from '../Footer/foter';
 
@@ -53,18 +54,18 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* Navigation Bar */}
+    
       <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <div className="logo">
           <span>Sompalli Mukhesh Kumar</span>
         </div>
 
-        {/* Menu Toggle Button */}
+       
         <button className="menu-toggle" onClick={toggleMenu}>
           {isOpen ? '✖' : '☰'}
         </button>
 
-        {/* Navigation Links */}
+        
         <ul className={`nav-links ${isOpen ? 'open' : 'closed'}`}>
           <li>
             <a 
@@ -125,7 +126,7 @@ const Navbar = () => {
         </section>
         
         <section id="services">
-          <MainApp />
+          <Services />
         </section>
         
         <section id="portfolio">

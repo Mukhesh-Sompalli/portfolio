@@ -12,81 +12,68 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding: 20px;
 }
 
 .service-card {
+  position: relative;
   background-color: #111;
   border: 1px solid #333;
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4); /* Pink shadow */
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4); /* Pink shadow */
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+}
+
+.service-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .service-card h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-}
-
-.service-card h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  background: linear-gradient(90deg, #ff00ff, #ff8c00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff8c00;
 }
 
 .service-card p {
   font-size: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.service-card button, .service-card a {
+.service-card button {
   background-color: black;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
   font-weight: bold;
-  display: inline-block;
   transition: background-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4); /* Pink shadow */
-  margin-top: auto; 
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
 }
 
-.service-card button:hover, .service-card a:hover {
+.service-card button:hover {
   background-color: black;
-  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4); /* Pink shadow */
-}
-
-.task-container {
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  border-radius: 10px;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4); /* Pink shadow */
-  transition: box-shadow 0.3s;
-}
-
-.task-container:hover {
-  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4); /* Pink shadow */
-}
-
-.task-container h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.task-container p {
-  font-size: 1.2em;
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
 }

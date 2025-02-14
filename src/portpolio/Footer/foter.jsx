@@ -7,7 +7,7 @@ import githubLogo from "./github.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Top Horizontal Rule */}
+     
       <hr className="horizontal-rule top-rule" />
 
       <div className="footer-content">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Horizontal Rule */}
+      
       <hr className="horizontal-rule bottom-rule" />
     </footer>
   );
