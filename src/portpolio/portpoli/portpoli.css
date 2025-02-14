@@ -149,7 +149,7 @@
 }
 
 
-@media (min-width: 110px) and (max-width: 710px) {
+@media (min-width: 10px) and (max-width: 710px) {
   .button { 
       display: none !important;
   }
