@@ -60,16 +60,10 @@ html {
     transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Default active link styling */
+/* Active Link Styling */
 .nav-links li a.active {
     background: linear-gradient(to right, #ff0080, #ff6600);
     color: white;
-}
-
-/* Remove background color for inactive links */
-.nav-links li a.not-active {
-    background: none;
-    color: #fff;
 }
 
 /* Hover effect */
@@ -111,12 +105,17 @@ section {
         padding: 10px 0;
     }
 
+    /* Toggle Button Visible */
     .menu-toggle {
-        display: block; /* Show toggle button */
+        display: block;
     }
 
-    /* Show nav links when navbar is open */
-    .navbar.open .nav-links {
+    /* Show nav links when menu is open */
+    .nav-links.open {
         display: flex;
+    }
+
+    .nav-links.closed {
+        display: none;
     }
 }

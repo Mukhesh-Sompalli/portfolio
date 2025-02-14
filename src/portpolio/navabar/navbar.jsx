@@ -15,7 +15,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // Smooth scrolling function (only affects navigation, NOT the image)
+  // Smooth scrolling function
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -32,7 +32,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "about", "services", "portfolio", "contact"];
-      let currentSection = "home"; // Default active section
+      let currentSection = "home"; 
 
       sections.forEach((id) => {
         const section = document.getElementById(id);
@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navigation Bar */}
-      <nav className="navbar">
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <div className="logo">
           <span>Sompalli Mukhesh Kumar</span>
         </div>
@@ -65,11 +65,11 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links */}
-        <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <ul className={`nav-links ${isOpen ? 'open' : 'closed'}`}>
           <li>
             <a 
               href="#home" 
-              className={activeSection === "home" ? "active" : "not-active"}
+              className={activeSection === "home" ? "active" : ""}
               onClick={() => scrollToSection("home")}
             >
               Home
