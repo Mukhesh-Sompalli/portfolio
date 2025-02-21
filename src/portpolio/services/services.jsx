@@ -86,16 +86,16 @@ const services = [
     title: 'REACT TASKS',
     tasks: [
       {
-        name: 'React Todo App',
-        description: 'Build a simple Todo List using React.',
-        deployLink: 'https://example.com/react-todo',
-        sourceCode: 'https://github.com/user/react-todo'
+        name: 'MATCHING CARDS',
+        description: 'This React code is for a two-player Flip Card Matching Game. It starts by creating a shuffled deck of cards, where each symbol appears four times. The FlipCardMatchgame component manages different states: cards (to keep track of all the cards), selectedCards (to store the currently flipped cards), player (to indicate whose turn it is), scores to count each player is score and gameOver (to check if all cards are matched). The game logic runs inside useEffect hooks, checking if two flipped cards match. If they match, they stay flipped, and the current player gets a point. If they don’t match, they flip back after a short delay. The game continues until all cards are matched, and then it displays the winner. The flipCard function ensures that only two cards can be flipped at a time, and restartGame resets everything for a new game. The UI includes a scoreboard, a grid layout for the cards, and a message when the game ends. The CSS styles define the layout, colors for flipped and matched cards, and highlight the active player is turn.',
+        deployLink: 'https://matchingcards-react.vercel.app/',
+        sourceCode: 'https://vercel.com/mukhesh-sompallis-projects/matchingcards-react/J61c8Xpy7STNJWHVG1tE9kCwRDsR/source'
       },
       {
-        name: 'React Weather App',
+        name: 'MOVIES LIST',
         description: 'Fetch and display weather data dynamically in React.',
-        deployLink: 'https://example.com/react-weather',
-        sourceCode: 'https://github.com/user/react-weather'
+        deployLink: 'https://movies-list-react-gamma.vercel.app/',
+        sourceCode: 'https://vercel.com/mukhesh-sompallis-projects/movies-list-react/7BFkiqqM8WLHbyigpUesUvkVA3eG/source'
       }
     ]
   }
